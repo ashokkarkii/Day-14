@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attrinute and pseudo selector</title>
+    <style>
+        .container {
+            background-color: aqua;
+            display: block;
+            width: 200px;
+            margin: auto;
+
+        }
+
+        /* input bhitra type text bhako lai matrai select garxa */
+        input[type="text"]{
+            color: aqua;
+            background-color: blue;
+        }
+
+        /* input bhitra type password bhako lai matrai select garxa */
+        input[type="password"] {
+            color: red;
+            list-style-type: square;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        /* li ko bhitra even list lai matrai select garxa */
+        li:nth-child(4)
+        {
+            color:red;
+            font-size: 10px;
+        }
+
+        li:nth-child(3)
+        {
+            color: rgb(243, 14, 255);
+        }
+
+
+        input {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="backend.php">
+            <input type="text" name="name" placeholder="Enter your name" class="item">
+            <input type="password" name="password" placeholder="Enter your password" class="item">
+            <input type="text" value="submit" class="item">
+        </form>
+        <ul>
+            <li class="item" id="iteam1">Iteam1</li>
+            <li class="item" id="iteam2">Iteam2</li>
+            <li class="item" id="iteam3">Iteam3</li>
+            <li class="item" id="iteam4">Iteam4</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

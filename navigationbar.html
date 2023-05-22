@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        ul.iteam {
+            float: left;
+            padding: 20px;
+            list-style: none;
+        }
+        section{
+            border: 2px solid red;
+            height: 100px; 
+        }
+        section::before
+        {
+            content: "Hello world";
+            height: 30px;
+        }
+        section::after{
+            content: "The end";
+            margin: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="container">
+            <ul class="Navigation">
+                <li class="iteam">Home</li>
+                <li class="iteam">About</li>
+                <li class="iteam">Service</li>
+                <li class="iteam">Contact us</li>
+            </ul>
+        </nav>
+        <section>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum saepe voluptatibus ut quaerat veniam,
+            magni modi cum beatae quia ipsam quisquam aperiam cumque earum. Nam quo magni ex. Fugiat, vero?
+        </section>
+    </header>
+
+</body>
+
+</html>
